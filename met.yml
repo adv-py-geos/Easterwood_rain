@@ -1,0 +1,13 @@
+name: met
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - dask
+  - jupyterlab
+  - matplotlib
+  - numpy
+  - pandas
+  - scikit-learn
+  - xarray
+  - cmocean
