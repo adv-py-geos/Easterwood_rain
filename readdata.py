@@ -1,6 +1,6 @@
 import pandas as pd
 
-def create_df(station):
+def create_df(station, period = '1d'):
     '''
     Takes a 3 letter station abbreviation from the user and
     returns all relevant met data as a dataframe.
@@ -8,7 +8,8 @@ def create_df(station):
     Parameters
     ----------
     station : str, 3 letter code representing the station needed
-
+    period  : str, the time period to average by.  Default is '1d' for daily data
+		input lenght followed by period code. Example( 1S, 1T, 1H, 1d, 1M, 1Y)
     Returns
     -------
     dataframe of all relevent met data indexed by day
@@ -32,6 +33,6 @@ def create_df(station):
     station_data = pd.read_csv('Data/{}.txt'.format(station), sep='\t',
                                 header=0, names = name_list, dtype = dtype_list,
                                 parse_dates = ['Date [UTC]'], index_col = 1) \
-                                .resample('1d').mean()
+                                .resample(period).mean()
 
     return(station_data)
