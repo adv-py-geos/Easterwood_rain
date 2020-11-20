@@ -7,9 +7,11 @@ Workflow:
  3. Show linear model
 '''
 
-from readdata import create_df
-from regress import linreg
-from plot_util import linplot
+# All function imports now come from our package folder Easterwood_rain
+from Easterwood_rain import create_df, linreg, linplot
+# from readdata import create_df
+# from regress import linreg
+# from plot_util import linplot
 
 import matplotlib.pyplot as plt
 
