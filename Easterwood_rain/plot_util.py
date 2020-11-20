@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
-from regress import linreg
+from .regress import linreg
 
 def linplot(model_dict):
     '''
