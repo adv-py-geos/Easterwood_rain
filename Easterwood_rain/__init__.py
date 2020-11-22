@@ -1,14 +1,17 @@
 
 from .data_stat import(
-    data_stat
+    data_stat,
+    stat_month
 )
 
-from .draw_hist import(
-    draw_hist
-)
+# from .draw_hist import(
+#     draw_hist
+# )
 
 from .plot_util import(
-    linplot
+    lin_plot,
+    stat_plot,
+    hist_plot
 )
 
 from .preprocessing import(
@@ -23,10 +26,10 @@ from .regress import(
     linreg
 )
 
-from .stat_month import(
-    stat_month
-)
+# from .stat_month import(
+#     stat_month
+# )
 
-from .stat_plot import(
-    stat_plot
-)
+# from .stat_plot import(
+#     stat_plot
+# )

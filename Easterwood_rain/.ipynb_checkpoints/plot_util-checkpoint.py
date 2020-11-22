@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 
 from .regress import linreg
 
-def lin_plot(df, x, y):
+def linplot(df, x, y):
     '''
     Uses the linreg function from regress.py to produce the model_dict that
     contains the model, values, and variable names. Values from model_dict are
@@ -79,7 +79,7 @@ def stat_plot(station_df,value_name):
     return(fig)
 
 
-def hist_plot(station_df,nbins,value_name):
+def draw_hist(station_df,nbins,value_name):
     #######Example##########
     #draw_hist(CLL,50,'Temp [F]')
 

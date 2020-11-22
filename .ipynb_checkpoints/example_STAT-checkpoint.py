@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # All function imports now come from our package folder Easterwood_rain
-from Easterwood_rain import create_df, data_stat, stat_month, stat_plot, hist_plot
+from Easterwood_rain import create_df, data_stat, stat_month, stat_plot, draw_hist
 # from readdata import create_df # made by 'a-vanderheiden'
 # from data_stat import data_stat
 # from stat_month import stat_month
@@ -30,6 +30,6 @@ plt.title('Monthly data plot ')
 
 
 #Draw histogram: EX)At CLL station, Temperature histogram
-hist_plot(station_df=CLL,nbins=50,value_name="Temp [F]")
+draw_hist(station_df=CLL,nbins=50,value_name="Temp [F]")
 plt.title('Example:Historgam of Temperature(CLL station)')
 plt.show()
