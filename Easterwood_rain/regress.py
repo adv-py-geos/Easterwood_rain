@@ -17,6 +17,12 @@ def linreg(df, x, y):
 
     y : string
         column title for the dependent variable
+
+    Returns
+    -------
+    model_dict : dictionary
+        dictionary containing the model object, values used to create
+        the model, and variable names of the values.
     '''
 
     # sklearn doesnt like nans in the LinearRegression function

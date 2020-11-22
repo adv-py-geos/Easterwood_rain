@@ -7,9 +7,11 @@ Workflow:
  3. Show linear model
 '''
 
-from readdata import create_df
-from regress import linreg
-from plot_util import linplot
+# All function imports now come from our package folder Easterwood_rain
+from Easterwood_rain import create_df, linreg, lin_plot
+# from readdata import create_df
+# from regress import linreg
+# from plot_util import linplot
 
 import matplotlib.pyplot as plt
 
@@ -31,5 +33,5 @@ print(eq_string)
 
 # Create a figure with linplot from plot_util.py
 #  - Creates plot from linereg dictionary output
-fig = linplot(my_model)
+fig = lin_plot(df, 'Temp [F]', '1Hr-Prcp [mm]')
 plt.show()

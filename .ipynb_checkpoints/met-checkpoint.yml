@@ -10,5 +10,5 @@ dependencies:
   - pandas
   - scikit-learn
   - xarray
-  - cartopy
   - cmocean
+
